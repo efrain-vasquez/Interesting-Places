@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS heroku_7ff9bd391daf70e;
+DROP DATABASE IF EXISTS test;
 
-CREATE DATABASE heroku_7ff9bd391daf70e;
+CREATE DATABASE test;
 
-USE heroku_7ff9bd391daf70e;
+USE test;
 
 CREATE TABLE items (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -10,5 +10,5 @@ CREATE TABLE items (
   locationName varchar (50) NOT NULL,
   description varchar (200) NOT NULL
 );
-INSERT INTO items (address, locationName, description) VALUES ('Toledo 39', 'Holacode', 'The coolest place on earth!)
+INSERT INTO items (address, locationName, description) VALUES ('Toledo 39', 'Holacode', 'The coolest place on earth!
 
