@@ -1,12 +1,12 @@
 const mysql = require('mysql');
 
-// mysql -u b214b26868bd9b -h us-cdbr-iron-east-02.cleardb.net -p heroku_6147ae801fa364d 
+//mysql: b949dc9ad3cbe1   aebf5070  us-cdbr-iron-east-02.cleardb.net  heroku_7ff9bd391daf70e
 
 const connection = mysql.createConnection({
   host     : 'us-cdbr-iron-east-02.cleardb.net',
-  user     : 'b214b26868bd9b',
-  password : 'f5cda1ab',
-  database : 'heroku_6147ae801fa364d'
+  user     : 'b949dc9ad3cbe1',
+  password : 'aebf5070',
+  database : 'heroku_7ff9bd391daf70e'
 });
 
 connection.connect(err => {
