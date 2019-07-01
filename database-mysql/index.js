@@ -1,5 +1,7 @@
 const mysql = require('mysql');
 
+// mysql -u b214b26868bd9b -h us-cdbr-iron-east-02.cleardb.net -p heroku_6147ae801fa364d 
+
 const connection = mysql.createConnection({
   host     : 'us-cdbr-iron-east-02.cleardb.net',
   user     : 'b214b26868bd9b',
