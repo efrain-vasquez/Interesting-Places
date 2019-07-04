@@ -6,6 +6,7 @@ const IntereestingPlacesList = ({ list, handleRemove }) => (
   <ul className='items'>
     {list.map(item => (
       <ListItem
+        key={item.id}
         address={item.address}
         locationName={item.locationName}
         description={item.description}

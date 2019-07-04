@@ -51,7 +51,10 @@ function addInterestingPlace(request, response) {
 function deleteInterestingPlace(request, response) {
   const { id } = request.body;
   db.removeInterestingPlace(id, data => {
-    response.status(200).send(data);
+    response
+    .status(200)
+    .send(data)
+    .end();
   });
 };
 

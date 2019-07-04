@@ -22,7 +22,7 @@ class App extends React.Component {
     this.getData('/items')
   }
 
-  getData (url = '/items') {
+  getData (url = '') {
     return fetch(url)
       .then(response => response.json())
       .then(data => {
@@ -33,7 +33,7 @@ class App extends React.Component {
       .catch(err => console.error(err))
   }
 
-  postData (url = 'items', data = {}) {
+  postData (url = '', data = {}) {
     return fetch(url, {
       method: 'POST',
       headers: {
@@ -71,8 +71,8 @@ class App extends React.Component {
       })
     }
   }
-
-  deleteItem (url = '/items', id = 0) {
+  
+  deleteItem (url = '', id = 0) {
     return fetch(url, {
       method: 'DELETE',
       headers: { 'Content-Type': 'application/json' },

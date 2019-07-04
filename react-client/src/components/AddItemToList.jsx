@@ -45,7 +45,7 @@ class AddItemToList extends React.Component {
     return (
       <div>
         <label>
-          address:{' '}
+          address:{''}
           <input
             type="text"
             name="address"
@@ -56,7 +56,7 @@ class AddItemToList extends React.Component {
 
         <br />
         <label>
-          locationName:{' '}
+          locationName:{''}
           <input
             type="text"
             name="locationName"
@@ -67,7 +67,7 @@ class AddItemToList extends React.Component {
 
         <br />
         <label>
-          description:{' '}
+          description:{''}
           <input
             type="text"
             name="description"
