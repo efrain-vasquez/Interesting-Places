@@ -2,19 +2,19 @@ const mysql = require('mysql');
 
 //mysql://b6eaa8246ac762:a12f7d32@us-cdbr-iron-east-02.cleardb.net/heroku_8ab5b02afcea8fe?reconnect=true
 
-const connection = mysql.createConnection({
-  host     : 'us-cdbr-iron-east-02.cleardb.net',
-  user     : 'b6eaa8246ac762',
-  password : 'a12f7d32',
-  database : 'heroku_8ab5b02afcea8fe'
-});
-
 // const connection = mysql.createConnection({
-//   host     : 'localhost',
-//   user     : 'root',
-//   password : 'Holacode',
-//   database : 'test'
+//   host     : 'us-cdbr-iron-east-02.cleardb.net',
+//   user     : 'b6eaa8246ac762',
+//   password : 'a12f7d32',
+//   database : 'heroku_8ab5b02afcea8fe'
 // });
+
+const connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'root',
+  password : 'Holacode',
+  database : 'test'
+});
 
 
 connection.connect(err => {
