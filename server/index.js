@@ -62,7 +62,7 @@ function deleteInterestingPlace(request, response) {
 here the server is listening so as to be ready to perform the actions that it is listening for
 */
 app.listen(port, () => {
-  console.log('listening on port 3000!');
+  console.log('Server is up!');
 });
 
 

@@ -1,7 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import $ from 'jquery'
-import ListItem from './components/ListItem.jsx'
 import AddItemToList from './components/AddItemToList.jsx'
 import InterestingPlacesList from './components/InterestingPlacesList.jsx'
 
