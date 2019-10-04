@@ -1,29 +1,12 @@
 const mysql = require('mysql');
-const dotenv = require('dotenv')
-import 
-
-
-// process.env.DB_PASSWORD
 
 
 const connection = mysql.createConnection({
-  host     : Host,
-  user     : Username,
-  password : Password,
-  database : Database
+  host     : process.env.Host,
+  user     : process.env.Username,
+  password : process.env.Password,
+  database : process.env.Database
 });
-
-
-
-// const db = require('db')
-// db.connect({
-//   host: process.env.DB_HOST,
-//   username: process.env.DB_USER,
-//   password: process.env.DB_PASS
-// })
-
-
-
 
 // const connection = mysql.createConnection({
 //   host     : 'localhost',
@@ -31,7 +14,6 @@ const connection = mysql.createConnection({
 //   password : 'Holacode',
 //   database : 'test'
 // });
-
 
 connection.connect(err => {
   if (err) {
