@@ -1,13 +1,29 @@
 const mysql = require('mysql');
+const dotenv = require('dotenv')
+import 
 
-//mysql://b6eaa8246ac762:a12f7d32@us-cdbr-iron-east-02.cleardb.net/heroku_8ab5b02afcea8fe?reconnect=true
+
+// process.env.DB_PASSWORD
+
 
 const connection = mysql.createConnection({
-  host     : 'us-cdbr-iron-east-02.cleardb.net',
-  user     : 'b6eaa8246ac762',
-  password : 'a12f7d32',
-  database : 'heroku_8ab5b02afcea8fe'
+  host     : Host,
+  user     : Username,
+  password : Password,
+  database : Database
 });
+
+
+
+// const db = require('db')
+// db.connect({
+//   host: process.env.DB_HOST,
+//   username: process.env.DB_USER,
+//   password: process.env.DB_PASS
+// })
+
+
+
 
 // const connection = mysql.createConnection({
 //   host     : 'localhost',
