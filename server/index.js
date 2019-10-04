@@ -1,9 +1,9 @@
-require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const db = require('../database-mysql/index.js');
 const app = express();
 const port = process.env.PORT || 3000;
+require('dotenv').config();
 
 app.use(
   bodyParser.urlencoded({
