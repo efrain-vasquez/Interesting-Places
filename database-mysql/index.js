@@ -1,21 +1,25 @@
 const mysql = require('mysql');
 
+if (process.env.JAWSDB_URL) {
+  var connection = mysql.createConnection(process.env.JAWSDB_URL)
+} else {
+  const connection = mysql.createConnection({
+    host     : 'localhost',
+    user     : 'root',
+    password : 'Holacode',
+    database : 'test'
+  });
+}
 
-
-
-const connection = mysql.createConnection({
-  host     : process.env.Host,
-  user     : process.env.Username,
-  password : process.env.Password,
-  database : process.env.Database
-});
 
 // const connection = mysql.createConnection({
-//   host     : 'localhost',
-//   user     : 'root',
-//   password : 'Holacode',
-//   database : 'test'
+//   host     : process.env.Host,
+//   user     : process.env.Username,
+//   password : process.env.Password,
+//   database : process.env.Database
 // });
+
+
 
 connection.connect(err => {
   if (err) {
